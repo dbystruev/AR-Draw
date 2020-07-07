@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5519DC5720238B6000B1008D /* OptionSelectorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5519DC5620238B6000B1008D /* OptionSelectorViewController.swift */; };
+		6953663624B419B2005BDBA7 /* Screenshots in Resources */ = {isa = PBXBuildFile; fileRef = 6953663524B419B2005BDBA7 /* Screenshots */; };
 		BE618F32203E31B8005EC6F1 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE618F31203E31B8005EC6F1 /* UIViewController+Extensions.swift */; };
 		BE915EAB20105C1D00A251FD /* OptionsContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE915EAA20105C1D00A251FD /* OptionsContainerViewController.swift */; };
 		BEDB2EDA200EABAD001C6BBC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDB2ED9200EABAD001C6BBC /* AppDelegate.swift */; };
@@ -22,9 +23,10 @@
 
 /* Begin PBXFileReference section */
 		5519DC5620238B6000B1008D /* OptionSelectorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionSelectorViewController.swift; sourceTree = "<group>"; };
+		6953663524B419B2005BDBA7 /* Screenshots */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Screenshots; sourceTree = "<group>"; };
 		BE618F31203E31B8005EC6F1 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
 		BE915EAA20105C1D00A251FD /* OptionsContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsContainerViewController.swift; sourceTree = "<group>"; };
-		BEDB2ED6200EABAD001C6BBC /* ARKit-Drawing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ARKit-Drawing.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEDB2ED6200EABAD001C6BBC /* AR Drawing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AR Drawing.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEDB2ED9200EABAD001C6BBC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BEDB2EDB200EABAD001C6BBC /* models.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = models.scnassets; sourceTree = "<group>"; };
 		BEDB2EDD200EABAD001C6BBC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -58,7 +60,7 @@
 		BEDB2ED7200EABAD001C6BBC /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				BEDB2ED6200EABAD001C6BBC /* ARKit-Drawing.app */,
+				BEDB2ED6200EABAD001C6BBC /* AR Drawing.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -67,14 +69,15 @@
 			isa = PBXGroup;
 			children = (
 				BEDB2ED9200EABAD001C6BBC /* AppDelegate.swift */,
-				BEDB2EDD200EABAD001C6BBC /* ViewController.swift */,
-				BEDB2EEF200ECC4C001C6BBC /* BasicShape.swift */,
-				BEDB2EDF200EABAD001C6BBC /* Main.storyboard */,
-				BEDB2EF1200ECF14001C6BBC /* Options */,
-				BEDB2EDB200EABAD001C6BBC /* models.scnassets */,
 				BEDB2EE2200EABAD001C6BBC /* Assets.xcassets */,
-				BEDB2EE4200EABAD001C6BBC /* LaunchScreen.storyboard */,
+				BEDB2EEF200ECC4C001C6BBC /* BasicShape.swift */,
 				BEDB2EE7200EABAD001C6BBC /* Info.plist */,
+				BEDB2EE4200EABAD001C6BBC /* LaunchScreen.storyboard */,
+				BEDB2EDF200EABAD001C6BBC /* Main.storyboard */,
+				BEDB2EDB200EABAD001C6BBC /* models.scnassets */,
+				BEDB2EF1200ECF14001C6BBC /* Options */,
+				6953663524B419B2005BDBA7 /* Screenshots */,
+				BEDB2EDD200EABAD001C6BBC /* ViewController.swift */,
 			);
 			path = "ARKit-Drawing";
 			sourceTree = "<group>";
@@ -107,7 +110,7 @@
 			);
 			name = "ARKit-Drawing";
 			productName = "ARKit-Drawing";
-			productReference = BEDB2ED6200EABAD001C6BBC /* ARKit-Drawing.app */;
+			productReference = BEDB2ED6200EABAD001C6BBC /* AR Drawing.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -122,7 +125,7 @@
 				TargetAttributes = {
 					BEDB2ED5200EABAD001C6BBC = {
 						CreatedOnToolsVersion = 9.2;
-						LastSwiftMigration = 1000;
+						LastSwiftMigration = 1150;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -154,6 +157,7 @@
 				BEDB2EEE200ECB94001C6BBC /* Options.storyboard in Resources */,
 				BEDB2EE6200EABAD001C6BBC /* LaunchScreen.storyboard in Resources */,
 				BEDB2EE3200EABAD001C6BBC /* Assets.xcassets in Resources */,
+				6953663624B419B2005BDBA7 /* Screenshots in Resources */,
 				BEDB2EE1200EABAD001C6BBC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -314,14 +318,16 @@
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2020.07.07;
 				DEVELOPMENT_TEAM = 8J39KF9DMS;
 				INFOPLIST_FILE = "ARKit-Drawing/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.example.ARKit-Drawing";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "AR Drawing";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -333,14 +339,16 @@
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2020.07.07;
 				DEVELOPMENT_TEAM = 8J39KF9DMS;
 				INFOPLIST_FILE = "ARKit-Drawing/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.example.ARKit-Drawing";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "AR Drawing";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
